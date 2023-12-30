@@ -134,6 +134,7 @@ h1 + p {
 label {
     color: var(--marine-blue);
     font-size: 0.75em;
+    line-height: .75em;
 }
 
 .error {
@@ -141,8 +142,9 @@ label {
 }
 
 .error strong {
+    font-weight: 400;
     float: right;
-    font-weight: 500;
+    vertical-align: middle;
 }
 
 .error input::placeholder {
@@ -205,10 +207,13 @@ footer button {
     }
 
     main {
-        flex-direction: row;
-        flex-basis: 100%;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        column-gap: 1.5em;
+        padding: 1em;
         width: 58.75em;
+        height: 35.5em;
         background: var(--white);
         border-radius: 0.9375em;
         box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
@@ -217,14 +222,13 @@ footer button {
     #nav {
         flex-direction: column;
         justify-content: flex-start;
-        flex-basis: 17.125em;
-        margin: 1em;
         background-image: url("images/bg-sidebar-desktop.svg");
-        background-size: 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         padding: 2.5em 0 0 2em;
         row-gap: 2em;
-        height: 35.5em;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 
     #nav li a {
@@ -251,9 +255,9 @@ footer button {
 
     #card {
         box-shadow: none;
-        flex-grow: 1;
-        padding-top: 3.5em;
-        align-self: flex-start;
+        padding: 3.5em 0 0;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 
     label {
@@ -269,6 +273,7 @@ footer button {
     }
 
     footer {
-        flex-basis: 100%;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 }
