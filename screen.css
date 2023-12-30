@@ -84,22 +84,29 @@ main {
 }
 
 #nav a {
-    width: 2.0625em;
-    height: 2.0625em;
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    display: block;
-    color: var(--white);
     text-decoration: none;
-    text-align: center;
+    color: var(--white);
+}
+
+#nav a b {
+    border-radius: 50%;
     line-height: 2.0625em;
     font-weight: 700;
     font-size: 0.875em;
+    text-align: center;
+    display: block;
+    width: 2.0625em;
+    height: 2.0625em;
+    border: 1px solid var(--white);
 }
 
-#nav a.active {
+#nav a.active b {
     background: var(--light-blue);
     color: var(--marine-blue);
+}
+
+#nav div {
+    display: none;
 }
 
 #card {
@@ -116,7 +123,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: normal;
-    margin: 0 0 .5625em;
+    margin: 0 0 .6875rem;
 }
 
 h1 + p {
@@ -126,6 +133,7 @@ h1 + p {
 
 label {
     color: var(--marine-blue);
+    font-size: 0.75em;
 }
 
 .error {
@@ -153,6 +161,7 @@ input {
     width: 100%;
     height: 2.5em;
     padding: 0 1em;
+    font-size: .9375rem;
     font-weight: 500;
     margin: .1875em 0 1em;
     border: 1px solid var(--light-gray);
@@ -186,17 +195,80 @@ footer button {
 
 @media (min-width: 60.75em) {
     body {
-        background: var(--magnolia);
         display: flex;
-        height: auto;
-        min-height: 100%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: auto;
+        min-height: 100%;
+        background: var(--magnolia);
     }
 
     main {
         flex-direction: row;
-        background: var(--white);
+        flex-basis: 100%;
+        flex-wrap: wrap;
         width: 58.75em;
+        background: var(--white);
+        border-radius: 0.9375em;
+        box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 17.125em;
+        margin: 1em;
+        background-image: url("images/bg-sidebar-desktop.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 2.5em 0 0 2em;
+        row-gap: 2em;
+        height: 35.5em;
+    }
+
+    #nav li a {
+        display: flex;
+        column-gap: 1em;
+        text-transform: uppercase;
+    }
+
+    #nav div {
+        display: block;
+        font-weight: 700;
+        font-size: .875em;
+        letter-spacing: 1px;
+    }
+
+    #nav div > strong {
+        display: block;
+        font-size: 0.75em;
+        font-weight: 400;
+        color: var(--pastel-blue);
+        letter-spacing: normal;
+        margin: 0 0 .25em;
+    }
+
+    #card {
+        box-shadow: none;
+        flex-grow: 1;
+        padding-top: 3.5em;
+        align-self: flex-start;
+    }
+
+    label {
+        font-size: 0.875em;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    footer {
+        flex-basis: 100%;
     }
 }
