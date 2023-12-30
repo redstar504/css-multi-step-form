@@ -53,20 +53,19 @@
         <p>Please provide your name, email address, and phone number.</p>
         <form id="personalInfo">
             <fieldset>
-                <label class="error">
-                    Name<strong>This field is required</strong><br>
-                    <input name="fullName" placeholder="e.g. Stephen King"><br>
+                <label for="fullName" class="error">
+                    Name
+                    <strong>This field is required</strong>
                 </label>
-                <label>
-                    Email Address<br>
-                    <input type="email" name="emailAddress" placeholder="e.g. stephenking@lorem.com">
-                    <br>
+                <input name="fullName" id="fullName" placeholder="e.g. Stephen King"><br>
+                <label for="emailAddress">
+                    Email Address
                 </label>
-                <label>
-                    Phone Number<br>
-                    <input type="tel" name="phoneNumber" placeholder="e.g. +1 234 567 890">
-                    <br>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="e.g. stephenking@lorem.com">
+                <label for="phoneNumber">
+                    Phone Number
                 </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="e.g. +1 234 567 890">
             </fieldset>
         </form>
     </section>
