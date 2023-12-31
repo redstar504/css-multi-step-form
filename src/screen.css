@@ -210,7 +210,7 @@ footer #nextStep {
         display: grid;
         grid-template-columns: 16.125em auto;
         grid-template-rows: 1fr auto;
-        padding: 1em;
+        padding: 1em 0 1em 1em;
         margin: 0 1em;
         max-width: 68em;
         height: 35.5em;
@@ -258,7 +258,7 @@ footer #nextStep {
         margin: 0;
         grid-column-start: 2;
         grid-column-end: 3;
-        padding: 3.5em 6.25em;
+        padding: 3.5em 10% 0 10%;
     }
 
     label {
