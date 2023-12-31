@@ -42,6 +42,10 @@
     margin: 0 0 0.4375em;
 }
 
+#termLength {
+    display: none;
+}
+
 #termLengthWrapper {
     height: 3em;
     background: var(--alabaster);
@@ -52,6 +56,7 @@
     justify-content: space-between;
     align-items: center;
     padding:0 3.5em;
+    transition: 0.2s;
 }
 
 #termControl {
@@ -59,9 +64,8 @@
     height: 1.25rem;
     background: var(--marine-blue);
     border-radius: 0.75em;
-    display: flex;
-    align-items: center;
-    padding: 0.25rem;
+    padding: 0.25rem 0 0.25em 0;
+    position: relative;
 }
 
 #termControl span {
@@ -70,8 +74,11 @@
     height: 0.75rem;
     background: var(--white);
     border-radius: 50%;
+    position: absolute;
+    left: 0.3125em;
+    transition: 0.075s left;
 }
 
-input#termLength:checked + #termControl {
-    justify-content: flex-end;
+#termLength:checked + #termLengthWrapper #termControl span {
+    left: 1.3125rem;
 }
