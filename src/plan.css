@@ -16,12 +16,18 @@
     color: var(--cool-gray);
     font-size: 0.875em;
     line-height: 1.25em;
+    height: 100%;
 }
 
 #planOptions a:hover,
 #planOptions a:active,
 #planOptions a:focus {
     border-color: var(--purplish-blue);
+}
+
+#planOptions a:active,
+#planOptions a:focus {
+    background-color: var(--alabaster);
 }
 
 #arcade a {
@@ -81,4 +87,27 @@
 
 #termLength:checked + #termLengthWrapper #termControl span {
     left: 1.3125rem;
+}
+
+@media(min-width: 60.75em) {
+    #planOptions {
+        flex-direction: row;
+        column-gap: 1em;
+        margin:0 0 2em;
+    }
+
+    #planOptions li {
+        flex-basis: 0;
+        flex-grow: 1;
+        height: 10em;
+    }
+
+    #planOptions li a {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        justify-content: flex-end;
+        background-position: 1em 1em;
+        row-gap: 0.4375em;
+    }
 }

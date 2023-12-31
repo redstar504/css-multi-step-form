@@ -74,6 +74,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    min-width: 21.4375em;
 }
 
 #nav {
