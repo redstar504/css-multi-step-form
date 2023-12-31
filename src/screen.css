@@ -194,10 +194,10 @@ footer #nextStep {
     text-decoration: none;
 }
 
-@media (min-width: 60.75em) {
+@media (min-width: 48em) {
     body {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         height: auto;
@@ -206,12 +206,13 @@ footer #nextStep {
     }
 
     main {
+        flex-grow: 1;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 16.125em auto;
         grid-template-rows: 1fr auto;
-        column-gap: 1.5em;
         padding: 1em;
-        width: 58.75em;
+        margin: 0 1em;
+        max-width: 68em;
         height: 35.5em;
         background: var(--white);
         border-radius: 0.9375em;
@@ -224,7 +225,7 @@ footer #nextStep {
         background-image: url("assets/bg-sidebar-desktop.svg");
         background-size: contain;
         background-repeat: no-repeat;
-        padding: 2.5em 0 0 2em;
+        padding: 2.5em 2em;
         row-gap: 2em;
         grid-row-start: 1;
         grid-row-end: 3;
@@ -254,9 +255,10 @@ footer #nextStep {
 
     #card {
         box-shadow: none;
-        padding: 3.5em 0 0;
+        margin: 0;
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
+        padding: 3.5em 6.25em;
     }
 
     label {
@@ -274,7 +276,8 @@ footer #nextStep {
 
     footer {
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
+        padding:0 6.25rem;
     }
 
     footer #nextStep {
