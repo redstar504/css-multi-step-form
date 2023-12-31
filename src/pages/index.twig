@@ -1,0 +1,25 @@
+{% extends 'layouts/main.twig' %}
+
+{% block card %}
+    <section id="card">
+        <h1>Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <form id="personalInfo">
+            <fieldset>
+                <label for="fullName" class="error">
+                    Name
+                    <strong>This field is required</strong>
+                </label>
+                <input name="fullName" id="fullName" placeholder="e.g. Stephen King"><br>
+                <label for="emailAddress">
+                    Email Address
+                </label>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="e.g. stephenking@lorem.com">
+                <label for="phoneNumber">
+                    Phone Number
+                </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="e.g. +1 234 567 890">
+            </fieldset>
+        </form>
+    </section>
+{% endblock card %}
