@@ -1,0 +1,77 @@
+#planOptions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+    margin: 0 0 1.5em;
+}
+
+#planOptions a {
+    border-radius: 0.5em;
+    padding: 1em 1em 1em 4.5em;
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    display: block;
+    border: 1px solid var(--light-gray);
+    text-decoration: none;
+    color: var(--cool-gray);
+    font-size: 0.875em;
+    line-height: 1.25em;
+}
+
+#planOptions a:hover,
+#planOptions a:active,
+#planOptions a:focus {
+    border-color: var(--purplish-blue);
+}
+
+#arcade a {
+    background-image: url(assets/icon-arcade.svg);
+}
+
+#advanced a {
+    background-image: url(assets/icon-advanced.svg);
+}
+
+#pro a {
+    background-image: url(assets/icon-pro.svg);
+}
+
+#planOptions h2 {
+    color: var(--marine-blue);
+    font-size: 1rem;
+    margin: 0 0 0.4375em;
+}
+
+#termLengthWrapper {
+    height: 3em;
+    background: var(--alabaster);
+    color: var(--marine-blue);
+    font-size: 0.875em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 3.5em;
+}
+
+#termControl {
+    width: 2.375rem;
+    height: 1.25rem;
+    background: var(--marine-blue);
+    border-radius: 0.75em;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+#termControl span {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+#termLength input:checked + #termControl {
+    justify-content: flex-end;
+}

@@ -1,4 +1,5 @@
 {
   "prevStep": "",
-  "nextStep": "plan"
+  "nextStep": "plan",
+  "stepNumber": 1
 }

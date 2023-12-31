@@ -1,4 +1,5 @@
 {
   "prevStep": "index",
-  "nextStep": "addons"
+  "nextStep": "addons",
+  "stepNumber": 2
 }

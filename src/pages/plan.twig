@@ -1,5 +1,37 @@
 {% extends 'layouts/main.twig' %}
 
 {% block card %}
-foo
+    <section id="card">
+        <h1>Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+        <ul id="planOptions">
+            <li id="arcade">
+                <a href="#">
+                    <h2>Arcade</h2>
+                    $9/mo
+                </a>
+            </li>
+            <li id="advanced">
+                <a href="#">
+                    <h2>Advanced</h2>
+                    $12/mo
+                </a>
+            </li>
+            <li id="pro">
+                <a href="#">
+                    <h2>Pro</h2>
+                    $15/mo
+                </a>
+            </li>
+        </ul>
+
+        <div id="termLengthWrapper">
+            <span>Monthly</span>
+            <input type="checkbox" id="termLength">
+            <label id="termControl" for="termLength">
+                <span></span>
+            </label>
+            <span>Yearly</span>
+        </div>
+    </section>
 {% endblock card %}
