@@ -82,6 +82,7 @@ main {
     justify-content: center;
     column-gap: 1em;
     padding: 2em 0;
+    counter-reset: stepNum;
 }
 
 #nav a {
@@ -99,14 +100,30 @@ main {
     width: 2.0625em;
     height: 2.0625em;
     border: 1px solid var(--white);
+    content: "foo";
 }
 
-#nav li.active a b {
+#nav li a::before {
+    border-radius: 50%;
+    line-height: 2.0625em;
+    font-weight: 700;
+    font-size: 0.875em;
+    text-align: center;
+    display: block;
+    width: 2.0625em;
+    height: 2.0625em;
+    border: 1px solid var(--white);
+    counter-increment: stepNum;
+    content: counter(stepNum);
+
+}
+
+#nav li.active a::before {
     background: var(--light-blue);
     color: var(--marine-blue);
 }
 
-#nav div {
+#nav span {
     display: none;
 }
 
@@ -237,14 +254,16 @@ footer #nextStep {
         text-transform: uppercase;
     }
 
-    #nav div {
+    #nav span {
         display: block;
         font-weight: 700;
         font-size: .875em;
         letter-spacing: 1px;
     }
 
-    #nav div > strong {
+
+    #nav span::before {
+        content: "Step " counter(stepNum);
         display: block;
         font-size: 0.75em;
         font-weight: 400;

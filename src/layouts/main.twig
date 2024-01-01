@@ -11,41 +11,17 @@
 <body>
 <main>
     <ul id="nav">
-        <li class="{{ stepNumber == 1 ? 'active' }}">
-            <a href="#">
-                <b>1</b>
-                <div>
-                    <strong>Step 1</strong>
-                    Your Info
-                </div>
-            </a>
+        <li{{ stepNumber == 1 ? ' class="active"' }}>
+            <a href="#"><span>Your Info</span></a>
         </li>
-        <li class="{{ stepNumber == 2 ? 'active' }}">
-            <a href="#">
-                <b>2</b>
-                <div>
-                    <strong>Step 2</strong>
-                    Select Plan
-                </div>
-            </a>
+        <li{{ stepNumber == 2 ? ' class="active"' }}>
+            <a href="#"><span>Select Plan</span></a>
         </li>
-        <li>
-            <a href="#">
-                <b>3</b>
-                <div>
-                    <strong>Step 3</strong>
-                    Add-ons
-                </div>
-            </a>
+        <li{{ stepNumber == 3 ? ' class="active"' }}>
+            <a href="#"><span>Add-ons</span></a>
         </li>
-        <li>
-            <a href="#">
-                <b>4</b>
-                <div>
-                    <strong>Step 4</strong>
-                    Summary
-                </div>
-            </a>
+        <li{{ stepNumber == 4 ? ' class="active"' }}>
+            <a href="#"><span>Summary</span></a>
         </li>
     </ul>
 
