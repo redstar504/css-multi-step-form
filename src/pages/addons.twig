@@ -1,7 +1,46 @@
 {% extends 'layouts/main.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="/src/addons.css">
+{% endblock stylesheets %}
+
 {% block card %}
     <section id="card">
-
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience. </p>
+        <ul id="planAddons">
+            <li>
+                <input type="checkbox" id="onlineServiceOffer">
+                <label for="onlineServiceOffer">
+                    <span class="addonControl"></span>
+                    <span class="offer">
+                        Online service
+                        <span>Access to multiplayer games</span>
+                    </span>
+                    <span class="fee">+$1/mo</span>
+                </label>
+            </li><li>
+                <input type="checkbox" id="largerStorageOffer">
+                <label for="largerStorageOffer">
+                    <span class="addonControl"></span>
+                    <span class="offer">
+                        Larger Storage
+                        <span>Extra 1TB of cloud storage</span>
+                    </span>
+                    <span class="fee">+$2/mo</span>
+                </label>
+            </li><li>
+                <input type="checkbox" id="customProfileOffer">
+                <label for="customProfileOffer">
+                    <span class="addonControl"></span>
+                    <span class="offer">
+                        Customizable profile
+                        <span>Custom theme on your profile</span>
+                    </span>
+                    <span class="fee">+$2/mo</span>
+                </label>
+            </li>
+        </ul>
     </section>
 {% endblock card %}
