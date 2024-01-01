@@ -172,6 +172,11 @@ input::placeholder {
     color: var(--cool-gray);
 }
 
+input:focus {
+    border-color: var(--purplish-blue);
+    outline: var(--purplish-blue);
+}
+
 .textInput {
     width: 100%;
     height: 2.5em;
@@ -181,6 +186,7 @@ input::placeholder {
     margin: .1875em 0 1em;
     border: 1px solid var(--light-gray);
     border-radius: 0.25em;
+    color: var(--marine-blue);
 }
 
 footer {

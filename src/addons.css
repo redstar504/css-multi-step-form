@@ -24,6 +24,10 @@
     text-decoration: none;
 }
 
+#planAddons label:hover {
+    border-color: var(--purplish-blue);
+}
+
 #planAddons input:checked + label .addonControl {
     background-color: var(--purplish-blue);
     border: none;
