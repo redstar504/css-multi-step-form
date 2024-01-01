@@ -4,34 +4,40 @@
     <section id="card">
         <h1>Select your plan</h1>
         <p>You have the option of monthly or yearly billing.</p>
-        <ul id="planOptions">
-            <li id="arcade">
-                <a href="#">
-                    <h2>Arcade</h2>
-                    $9/mo
-                </a>
-            </li>
-            <li id="advanced">
-                <a href="#">
-                    <h2>Advanced</h2>
-                    $12/mo
-                </a>
-            </li>
-            <li id="pro">
-                <a href="#">
-                    <h2>Pro</h2>
-                    $15/mo
-                </a>
-            </li>
-        </ul>
 
-        <input type="checkbox" id="termLength">
-        <label id="termLengthWrapper" for="termLength">
-            <span>Monthly</span>
-            <span id="termControl">
+        <article>
+            <input type="checkbox" id="termLength">
+            <label id="termLengthWrapper" for="termLength">
+                <span>Monthly</span>
+                <span id="termControl">
                 <span></span>
             </span>
-            <span>Yearly</span>
-        </label>
+                <span>Yearly</span>
+            </label>
+
+            <ul id="planOptions">
+                <li id="arcade">
+                    <a href="#">
+                        <h2>Arcade</h2>
+                        $9/mo
+                        <span class="annualOffer">2 months free</span>
+                    </a>
+                </li>
+                <li id="advanced">
+                    <a href="#">
+                        <h2>Advanced</h2>
+                        $12/mo
+                        <span class="annualOffer">2 months free</span>
+                    </a>
+                </li>
+                <li id="pro">
+                    <a href="#">
+                        <h2>Pro</h2>
+                        $15/mo
+                        <span class="annualOffer">2 months free</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
     </section>
 {% endblock card %}

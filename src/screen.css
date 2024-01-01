@@ -199,6 +199,10 @@ footer #prevStep {
     text-decoration: none;
 }
 
+footer #prevStep:hover {
+    color: var(--marine-blue);
+}
+
 footer #nextStep {
     height: 3rem;
     background: var(--marine-blue);
