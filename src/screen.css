@@ -75,13 +75,14 @@ main {
     flex-direction: column;
     min-height: 100%;
     min-width: 21.4375em;
+    row-gap: 1em;
 }
 
 #nav {
     display: flex;
     justify-content: center;
     column-gap: 1em;
-    padding: 2em 0;
+    padding: 2em 0 1em;
     counter-reset: stepNum;
 }
 
@@ -238,6 +239,7 @@ footer #nextStep {
         background: var(--white);
         border-radius: 0.9375em;
         box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
+        row-gap: 0;
     }
 
     #nav {
@@ -303,7 +305,7 @@ footer #nextStep {
     footer {
         grid-column-start: 2;
         grid-column-end: 3;
-        padding:0 6.25rem;
+        padding:0 10%;
     }
 
     footer #nextStep {
