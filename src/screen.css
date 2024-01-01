@@ -234,7 +234,7 @@ footer #nextStep {
         padding: 1em 0 1em 1em;
         margin: 0 1em;
         max-width: 68em;
-        height: 35.5em;
+        min-height: 35.5em;
         background: var(--white);
         border-radius: 0.9375em;
         box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.1);
@@ -243,9 +243,12 @@ footer #nextStep {
     #nav {
         flex-direction: column;
         justify-content: flex-start;
-        background-image: url("assets/bg-sidebar-desktop.svg");
+        background-image: url("assets/desktop-sidebar.svg");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: var(--purplish-blue);
+        border-radius: 0.625em;
         padding: 2.5em 2em;
         row-gap: 2em;
         grid-row-start: 1;
