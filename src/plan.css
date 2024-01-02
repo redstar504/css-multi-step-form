@@ -12,9 +12,9 @@ article {
 
 #planOptions a {
     border-radius: 0.5em;
-    padding: 1em 1em 1em 4.5em;
+    padding: 1.375em 1em 1.375em 4.5em;
     background-repeat: no-repeat;
-    background-position: 1em 1em;
+    background-position: left 1em top 1.375em;
     border: 1px solid var(--light-gray);
     text-decoration: none;
     color: var(--cool-gray);
@@ -49,15 +49,16 @@ article {
 }
 
 #planOptions h2 {
-    color: var(--marine-blue);
     font-size: 1rem;
-    font-weight: 500;
 }
 
 #planOptions .annualOffer {
-    font-size: 0.75rem;
-    color: var(--marine-blue);
     display: none;
+    color: var(--marine-blue);
+}
+
+#termLength:checked ~ #planOptions .annualOffer {
+    display: block;
 }
 
 #termLength {
@@ -65,17 +66,19 @@ article {
 }
 
 #termLengthWrapper {
-    height: 3em;
-    background: var(--alabaster);
-    color: var(--cool-gray);
-    font-size: 0.875em;
-    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1.5em;
-    transition: 0.2s;
+    background: var(--alabaster);
     border-radius: 0.5em;
+    column-gap: 1.5em;
+    transition: 0.2s left;
+    padding: 0.875rem 0;
+}
+
+#termLengthWrapper span {
+    color: var(--cool-gray);
+    font-size: 0.875rem;
 }
 
 #termLength + #termLengthWrapper span:first-of-type {
@@ -98,7 +101,7 @@ article {
     position: relative;
 }
 
-#termControl span {
+#termControl i {
     display: block;
     width: 0.75rem;
     height: 0.75rem;
@@ -109,12 +112,8 @@ article {
     transition: 0.075s left;
 }
 
-#termLength:checked + #termLengthWrapper #termControl span {
+#termLength:checked + #termLengthWrapper #termControl i {
     left: 1.3125rem;
-}
-
-#termLength:checked ~ #planOptions .annualOffer {
-    display: block;
 }
 
 @media(min-width: 60.75em) {

@@ -15,13 +15,11 @@
 
 #planAddons label {
     display: flex;
-    font-size: 0.875em;
     align-items: center;
     column-gap: 1em;
     padding: 1em;
     border: 1px solid var(--light-gray);
     border-radius: 0.5em;
-    text-decoration: none;
 }
 
 #planAddons label:hover {
@@ -38,11 +36,10 @@
 
 #planAddons input:checked + label .addonControl::before {
     content: "";
-    width: 12px;
-    height: 9px;
+    width: 0.75rem;
+    height: 0.5625rem;
     background: url(assets/icon-checkmark.svg) 0 0 no-repeat;
     color: var(--white);
-    font-size: 1rem;
 }
 
 #planAddons .addonControl {
@@ -55,23 +52,14 @@
 }
 
 .offer {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    font-size: 0.875rem;
-    font-weight: 500;
+    flex-grow: 1;
+    row-gap: 0.4375rem;
     color: var(--marine-blue);
-    row-gap: 0.5rem;
-}
-
-.offer span {
-    font-size: 0.75rem;
-    color: var(--cool-gray);
-    font-weight: 400;
 }
 
 .fee {
-    font-size: 0.75rem;
     color: var(--purplish-blue);
 }
 
@@ -85,7 +73,7 @@
         row-gap: 0.4375rem;
     }
 
-    .offer span,
+    .offer small,
     .fee {
         font-size: 0.875rem;
     }
