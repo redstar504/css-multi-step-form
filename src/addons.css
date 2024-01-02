@@ -37,7 +37,10 @@
 }
 
 #planAddons input:checked + label .addonControl::before {
-    content: "\2713";
+    content: "";
+    width: 12px;
+    height: 9px;
+    background: url(assets/icon-checkmark.svg) 0 0 no-repeat;
     color: var(--white);
     font-size: 1rem;
 }
@@ -58,7 +61,7 @@
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--marine-blue);
-    row-gap: 0.1875rem;
+    row-gap: 0.5rem;
 }
 
 .offer span {
@@ -80,5 +83,10 @@
 
     .offer {
         row-gap: 0.4375rem;
+    }
+
+    .offer span,
+    .fee {
+        font-size: 0.875rem;
     }
 }

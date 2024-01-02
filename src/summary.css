@@ -8,6 +8,7 @@
     border-radius: 0.5em;
     row-gap: 0.75rem;
     margin: 0 0 1.5em;
+    line-height: 1.25rem;
 }
 
 #planTotals li {
@@ -18,7 +19,6 @@
 
 #planTotals a {
     color: var(--cool-gray);
-    flex-basis: 0;
 }
 
 #planTotals a:hover {
@@ -27,7 +27,7 @@
 
 #planTotals #heading {
     border-bottom: 1px solid var(--lighter-gray);
-    padding: 0 0 0.75rem;
+    padding: 0 0 .75rem;
 }
 
 #heading h2,
@@ -36,9 +36,10 @@
 }
 
 #planTotals h2 {
-    margin-bottom: 0.1875rem;
-    font-size: 0.875em;
+    font-size: .875rem;
     font-weight: 500;
+    line-height: normal;
+    margin-bottom: .1875rem;
 }
 
 #planTotals span:last-of-type {
@@ -73,7 +74,7 @@
     }
 
     #planTotals #heading {
-        padding: 0 0 1rem;
+        padding: 0 0 1.5rem;
     }
 
     #planTotals h2,

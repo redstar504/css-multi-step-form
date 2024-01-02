@@ -148,8 +148,15 @@ h1 {
 }
 
 h1 + p {
-    line-height: 1.5625em;
+    line-height: normal;
     margin-bottom: 1.375em;
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--marine-blue);
+    line-height: normal;
+    font-weight: 500;
 }
 
 label {
@@ -159,10 +166,13 @@ label {
     justify-content: space-between;
 }
 
+label strong {
+    display: none;
+}
+
 .error strong {
+    display: block;
     font-weight: 700;
-    float: right;
-    vertical-align: middle;
     color: var(--strawberry-red);
 }
 
@@ -214,13 +224,14 @@ main > footer #prevStep:hover {
 
 main > footer #nextStep {
     width: 7.6875em;
-    height: 3rem;
-    line-height: 3rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     text-align: center;
     background: var(--marine-blue);
     color: var(--white);
     border-radius: .25rem;
     text-decoration: none;
+    margin-left: auto;
 }
 
 @media (min-width: 48em) {
@@ -300,14 +311,25 @@ main > footer #nextStep {
         font-size: 0.875em;
     }
 
-    input {
-        font-size: 1rem;
+    .textInput {
         margin-top: 0.5em;
+        height: 3em;
     }
 
     h1 {
         font-size: 2em;
         margin-bottom: 0.6875rem;
+    }
+
+    h1 + p {
+        margin-bottom: 2.1875em;
+    }
+
+    h2 {
+        font-size: 0.875rem;
+        color: var(--marine-blue);
+        line-height: normal;
+        font-weight: 500;
     }
 
     main > footer {
@@ -318,5 +340,7 @@ main > footer #nextStep {
 
     main > footer #nextStep {
         border-radius: 0.5em;
+        height: 3rem;
+        line-height: 3rem;
     }
 }

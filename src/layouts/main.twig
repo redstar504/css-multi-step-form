@@ -28,7 +28,9 @@
 {% block card %}{% endblock %}
     {% if hideActions is not defined %}
     <footer>
+        {% if prevStep is defined %}
         <a href="/{{ prevStep }}" id="prevStep">Go Back</a>
+        {% endif %}
         <a href="/{{ nextStep }}" id="nextStep">
             {{ nextStepLabel is defined ? nextStepLabel : 'Next Step' }}
         </a>
