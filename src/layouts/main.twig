@@ -26,13 +26,14 @@
     </ul>
 
 {% block card %}{% endblock %}
-
+    {% if hideActions is not defined %}
     <footer>
         <a href="/{{ prevStep }}" id="prevStep">Go Back</a>
         <a href="/{{ nextStep }}" id="nextStep">
             {{ nextStepLabel is defined ? nextStepLabel : 'Next Step' }}
         </a>
     </footer>
+    {% endif %}
 </main>
 </body>
 </html>

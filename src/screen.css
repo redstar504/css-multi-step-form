@@ -50,6 +50,7 @@ ul {
 :root {
     --marine-blue: hsl(213, 96%, 18%);
     --purplish-blue: hsl(243, 100%, 62%);
+    --purplish-faded: hsl(243, 100%, 77%);
     --pastel-blue: hsl(228, 100%, 84%);
     --light-blue: hsl(206, 94%, 87%);
     --strawberry-red: hsl(354, 84%, 57%);
@@ -143,7 +144,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: normal;
-    margin: 0 0 .6875rem;
+    margin: 0 0 .5625rem;
 }
 
 h1 + p {
@@ -212,14 +213,13 @@ main > footer #prevStep:hover {
 }
 
 main > footer #nextStep {
+    width: 7.6875em;
     height: 3rem;
+    line-height: 3rem;
+    text-align: center;
     background: var(--marine-blue);
-    border-radius: .25rem;
-    padding: 0.75rem 1rem;
     color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: .25rem;
     text-decoration: none;
 }
 
@@ -307,6 +307,7 @@ main > footer #nextStep {
 
     h1 {
         font-size: 2em;
+        margin-bottom: 0.6875rem;
     }
 
     main > footer {

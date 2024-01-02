@@ -62,6 +62,10 @@
     background: var(--purplish-blue);
 }
 
+#summaryCard + footer #nextStep:hover {
+    background: var(--purplish-faded);
+}
+
 @media(min-width: 48em) {
     #planTotals {
         row-gap: 1rem;
