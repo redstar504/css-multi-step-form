@@ -21,7 +21,7 @@
             <a href="/addons"><span>Add-ons</span></a>
         </li>
         <li{{ stepNumber == 4 ? ' class="active"' }}>
-            <a href="#"><span>Summary</span></a>
+            <a href="/summary"><span>Summary</span></a>
         </li>
     </ul>
 
@@ -29,7 +29,9 @@
 
     <footer>
         <a href="/{{ prevStep }}" id="prevStep">Go Back</a>
-        <a href="/{{ nextStep }}" id="nextStep">Next Step</a>
+        <a href="/{{ nextStep }}" id="nextStep">
+            {{ nextStepLabel is defined ? nextStepLabel : 'Next Step' }}
+        </a>
     </footer>
 </main>
 </body>
